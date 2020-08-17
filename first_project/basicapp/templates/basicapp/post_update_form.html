@@ -1,0 +1,10 @@
+{% extends "basicapp/base.html" %}
+{% load bootstrap4 %}
+    {% block content %}
+        <h1>Edytuj post</h1>
+        <form method="POST" class="post-form">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <button type="submit" class="btn btn-outline-primary" value="Update">Zapisz</button>
+        </form>
+    {% endblock %}

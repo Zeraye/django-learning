@@ -1,0 +1,8 @@
+{% extends "basicapp/base.html" %}
+    {% block content %}
+        <form method="POST">
+            {% csrf_token %}
+            <p>Na pewno chcesz usunąć "{{ object }}"?</p>
+            <input class="btn btn-outline-danger" type="submit" value="Potwiedź" />
+        </form>
+    {% endblock %}

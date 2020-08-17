@@ -1,0 +1,15 @@
+.post_text {
+    font-size: 1.5em;
+
+}
+
+.list_header {
+    color: #666666;
+    text-decoration: none;
+}
+
+/* mouse over link */
+.list_header:hover {
+    color: #555555;
+    text-decoration: none;
+}

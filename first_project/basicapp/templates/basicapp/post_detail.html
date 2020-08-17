@@ -1,0 +1,9 @@
+{% extends "basicapp/base.html" %}
+{% load bootstrap4 %}
+    {% block content %}
+        <h1>{{ post.title }}</h1>
+        <p class="post_text">{{ post.text }}</p>
+        <a class="btn btn-outline-success" href="{% url 'post_edit' pk=post.pk %}">Edytuj</a>
+        <a class="btn btn-outline-danger" href="{% url 'post_remove' pk=post.pk %}">Usuń</a>
+        </div>
+    {% endblock %}

@@ -1,0 +1,12 @@
+{% extends "basicapp/base.html" %}
+    {% block content %}
+        <div class="container">
+            {% for post in post_list %}
+                <div class="post">
+                    <h1><a class="list_header" href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                    <p class="post_text"><a>{{ post.text }}</a></p>
+                    <hr>
+                </div>
+            {% endfor %}
+        </div>
+    {% endblock %}
